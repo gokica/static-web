@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>form[action*='createsend.com']{
+	*{
+		.transition(0.3s,linear);
+		opacity: 0;
+	}
+	&amp;.form--active{
+		*{
+			opacity: 1;
+		}
+	}
+	.input-checkbox{
+		+ br{
+			display: none;
+		}
+	}
+	&amp;.no-labels{
+		label{
+			display: none
+		}
+	}
+	br{
+		display: none;
+	}
+	p{
+		&gt; label{
+			&amp;:first-child{
+				margin-bottom: @base-line-height / 2;
+			}
+		}
+	}
+}
+
+form[action*='list-manage.com']{
+	h2{
+		.h4;
+	}
+	.input-group{
+		ul{
+			overflow: hidden;
+			li{
+				float: left;
+			}
+		}
+	}
+	*{
+		.transition(0.3s,linear);
+		opacity: 0;
+	}
+	&amp;.form--active{
+		*{
+			opacity: 1;
+		}
+	}
+	&amp;.no-labels{
+		label{
+			display: none
+		}
+	}
+	.small-meta{
+    font-size: 0.5em;
+	}
+}</p></body></html>

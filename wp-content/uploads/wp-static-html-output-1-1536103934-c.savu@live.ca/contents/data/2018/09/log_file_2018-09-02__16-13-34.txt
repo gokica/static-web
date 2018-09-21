@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>---Downloaded files---
+The import files for: Stack + Visual Composer Demo Data were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = 
+Data file = /Users/cristiansavu/Sites/goki.ca/contents/data/2018/09/demo-content-import-file_2018-09-02__16-13-34.xml
+Widget file = /Users/cristiansavu/Sites/goki.ca/contents/data/2018/09/demo-widgets-import-file_2018-09-02__16-13-34.json
+Customizer file = /Users/cristiansavu/Sites/goki.ca/contents/data/2018/09/demo-customizer-import-file_2018-09-02__16-13-34.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Blog Sidebar : 
+
+Search - Search Site - Imported
+Text - Text Widget - Imported
+Tag Cloud - Tags - Imported
+Categories - Categories - Imported
+Archives - Archives - Imported
+
+Page Sidebar : 
+
+Search - Search Site - Imported
+Text - Text Widget - Imported
+
+Shop Sidebar : 
+
+Product Categories - Product Categories - Imported
+Products by Rating - Top Rated Products - Imported
+Recent Product Reviews - Recent Reviews - Imported
+
+Footer Column 1 : 
+
+Text - About Us - Imported
+
+Footer Column 2 : 
+
+Stack: Twitter Widget - Recent Updates - Imported
+
+Footer Column 3 : 
+
+Stack: Instagram Widget - Instagram - Imported
+
+Footer Column 4 : 
+
+Text - Newsletter - Imported
+
+
+
+---Importing customizer settings---
+Error: The customizer import file is not suitable for current theme. You can only import customizer settings for the same theme or a child theme.
+
+---pt-ocdi/after_import---
+
+</p></body></html>

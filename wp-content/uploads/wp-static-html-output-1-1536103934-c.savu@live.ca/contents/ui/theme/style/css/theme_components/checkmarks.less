@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*! -- Stack Checkmarks &amp; Crosses -- */
+
+.checkmark{
+	display: inline-block;
+	position: relative;
+	width: @base-line-height/1.5;
+	height: @base-line-height/1.5;
+	border-radius: 50%;
+	text-align: center;
+	&amp;:not([class*='bg-']){
+		background: @color-primary;
+	}
+	&amp;:before{
+		content: '\2713';
+		color: #fff;
+		font-size: 11px;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: -4px;
+	}
+	&amp;.checkmark--cross{
+		&amp;:before{
+			content: '\2717';
+		}
+	}
+	&amp;:not(:last-child){
+		margin-right: 13px;
+	}
+}</p></body></html>

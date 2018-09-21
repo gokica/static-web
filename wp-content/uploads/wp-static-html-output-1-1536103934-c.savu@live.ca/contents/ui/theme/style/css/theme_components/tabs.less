@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*! -- Stack Tabs -- */
+
+.tabs-container{
+	&amp;.tabs--vertical{
+		overflow: hidden;
+		.tabs{
+			width: 25%;
+			float: left;
+			li{
+				display: block;
+				&amp;:not(:last-child){
+					border-right: none;
+					border-bottom: 1px solid #ECECEC;
+				}
+			}
+		}
+		.tabs-content{
+			width: 70%;
+			float: right;
+			margin-top: 0;
+			&gt; li{
+				&amp;:not(.active){
+					.tab__content{
+						animation: fadeOutUp .5s ease forwards;
+				    -webkit-animation: fadeOutUp .5s ease forwards;
+					}
+				}
+				&amp;.active{
+					.tab__content{
+						animation: fadeInUp .5s ease forwards;
+				    -webkit-animation: fadeInUp .5s ease forwards;
+				    backface-visibility: hidden;
+					}
+				}
+			}
+		}
+		&amp;.tabs--icons{
+			.tabs{
+				width: 15%;
+				text-align: center;
+			}
+			.tabs-content{
+				width: 80%;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 767px){
+	.tabs-container{
+		&amp;.tabs--vertical{
+			.tabs,.tabs-content{
+				width: 100%;
+				float: none;
+			}
+			.tabs{
+				margin-bottom: @base-line-height;
+			}
+			.tabs-content{
+				&gt; li{
+					&amp;:not(.active){
+						.tab__content{
+							animation: fadeOutRight .5s ease forwards;
+				            -webkit-animation: fadeOutRight .5s ease forwards;
+				    	}
+					}
+					&amp;.active{
+						.tab__content{
+							animation: fadeInLeft .5s ease forwards;
+			                -webkit-animation: fadeInLeft .5s ease forwards;
+			                backface-visibility: hidden;
+			        	}
+					}
+				}
+			}
+		}
+	}
+}
+
+.tabs{
+	display: inline-block;
+	border: 1px solid #ECECEC;
+	border-radius: 6px;
+	margin-bottom: @base-line-height;
+	li{
+		.transition(0.3s,ease);
+		padding: @base-line-height/2 @base-line-height;
+		&amp;:not(:last-child){
+			border-right: 1px solid #ECECEC;
+		}
+		&amp;.active{
+			opacity: 1;
+			.tab__title{
+				color: @color-primary;
+				span{
+					color: @color-primary;
+				}
+			}
+		}
+		&amp;:not(.active){
+			opacity: .5;
+		}
+		&amp;:hover{
+			opacity: 1;
+			cursor: pointer;
+		}
+	}
+	.tab__title{
+		.transition(0.3s,ease);
+		&amp;:not(.btn){
+			padding-right: 0;
+			padding-left: 0;	
+		}
+		i+span{
+			margin-top: @base-line-height/4;
+			display: inline-block;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.bg--primary{
+	.tabs{
+		border-color: #fff;
+		li{
+			&amp;.active{
+				.tab__title{
+					color: #fff;
+					span{
+						color: #fff;
+					}
+				}
+			}
+			&amp;:not(:last-child){
+				border-color: #fff;
+			}
+		}
+	}
+}
+
+@media all and (min-width: 768px){
+	.tabs{
+		&amp;.tabs--spaced{
+			margin-bottom: @base-line-height*2;
+		}
+	}
+}
+
+.tabs-content{
+	position: relative;
+	&gt;li{
+		&amp;:not(.active){
+			.tab__content{
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: block;
+				opacity: 0;
+				pointer-events: none;
+				animation: fadeOutRight .5s ease forwards;
+				-webkit-animation: fadeOutRight .5s ease forwards;
+			}
+		}
+		&amp;.active{
+			animation: fadeInLeft .5s ease forwards;
+			-webkit-animation: fadeInLeft .5s ease forwards;
+			backface-visibility: hidden;
+		}
+	}
+}
+
+@media all and (max-width: 767px){
+	.tabs{
+		li{
+			display: block;
+			&amp;:not(:last-child){
+				border-bottom: 1px solid #ECECEC;
+				border-right: none;
+			}
+		}
+	}
+}
+
+.tabs--folder{
+	.tabs{
+		overflow: hidden;
+		margin-bottom: 0;
+		border-radius: 6px 6px 0 0;
+		border-bottom: none;
+		&gt; li{
+			border-top: 3px solid rgba(0,0,0,0);
+			&amp;.active{
+				border-top: 3px solid @color-primary;
+			}
+		}
+	}
+	.tabs-content{
+		overflow: hidden;
+		position: relative;
+		bottom: 8px;
+		padding: @base-line-height;
+		border: 1px solid #ECECEC;
+		border-radius: 0 0 6px 6px;
+		&gt; li{
+			&amp;:not(.active){
+				.tab__content{
+					top: @base-line-height;
+					left: @base-line-height;
+				}
+			}
+		}
+	}
+	.tab__title{
+		.h5{
+			margin: 0;
+			display: inline-block;
+		}
+		.label{
+			position: relative;
+			color: #fff !important;
+			top: -2px;
+			right: 0;
+			margin-left: @base-line-height/4;
+			min-width: 0;
+		}
+	}
+}</p></body></html>

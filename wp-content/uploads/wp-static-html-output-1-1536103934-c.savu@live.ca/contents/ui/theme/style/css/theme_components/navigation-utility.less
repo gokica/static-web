@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*! -- Stack Nav Utility -- */
+
+.nav-utility{
+	padding: @base-line-height/2 0;
+	.nav-utility__module{
+		font-size: 0.85714285714286em;
+		a{
+			color: @color-body;
+			font-weight: normal;
+			i{
+				.transition(0.3s,ease);
+				display: inline-block;
+			}
+			&amp;:hover{
+				i{
+					.scale(1.5);
+				}
+			}
+		}
+		&amp;.right{
+			&amp;:not(:last-child){
+				margin-left: 2.16666666666667em;
+			}
+		}
+	}
+}
+
+.utility-toggle{
+	display: inline-block;
+	cursor: pointer;
+	width: 3px;
+	height: 3px;
+	position: relative;
+	bottom: 8px;
+	border-radius: 50%;
+	background: @color-dark;
+	&amp;:before, &amp;:after{
+		content: '';
+		width: 3px;
+		height: 3px;
+		border-radius: 50%;
+		position: absolute;
+		background: @color-dark;
+	}
+	&amp;:before{
+		top: 6px;
+	}
+	&amp;:after{
+		top: 12px;
+	}
+}</p></body></html>

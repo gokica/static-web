@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*! -- Stack Sections -- */
+
+section{
+	&amp;:not(.unpad):not(.imagebg):not([class*='bg--']):not(.imageblock):not(.unpad--bottom):not(.border--bottom):not(.space--xxs){
+		+ section:not(.unpad):not(.imagebg):not([class*='bg--']):not(.imageblock):not(.border--bottom):not(.space--xxs){
+			padding-top: 0;
+		}
+	}
+	&amp;:not(.unpad):not(.imagebg):not([class*='bg--']):not(.imageblock):not(.unpad--bottom):not(.border--bottom){
+		+footer:not(.unpad):not(.imagebg):not([class*='bg--']):not(.imageblock):not(.unpad--bottom):not(.border--bottom){
+			padding-top: 0;
+		}
+	}
+	&amp;:not(.imagebg):not([class*='bg-']){
+		+section{
+			&amp;.bg--secondary{
+				border-top: 1px solid darken(@color-bg-secondary, 6%);
+			}
+		}
+	}
+	&amp;.bg--secondary{
+		&amp;:not(.imagebg){
+			+section:not(.imagebg):not([class*='bg-']){
+				border-top: 1px solid darken(@color-bg-secondary, 6%);
+			}
+		}
+		&amp;:not(.unpad):not(.imageblock):not(.unpad--bottom):not(.border--bottom){
+			+section.bg--secondary{
+				padding-top: 0;
+			}
+		}
+		+footer{
+			&amp;:not(.bg--dark):not(.bg--secondary){
+				border-top: 1px solid darken(@color-bg-secondary, 6%);
+			}
+		}
+	}
+	&amp;.bg--dark{
+		+section.bg--dark{
+			padding-top: 0;
+		}
+		&amp;:last-of-type{
+			+footer.bg--dark{
+				background: darken(@color-dark, 4%)
+			}
+		}
+	}
+	&amp;.border--bottom{
+		&amp;:not([data-gradient-bg]){
+			border-bottom: 1px solid #ececec;
+		}
+	}
+	&amp;.unpad{
+		overflow: hidden;
+	}
+	&amp;:not([class*='bg--']){
+		+footer{
+			&amp;.bg--secondary{
+				border-top: 1px solid darken(@color-bg-secondary, 6%);
+			}
+		}
+	}
+	&amp;.text-center{
+		div[class*='col-']{
+			&amp;:first-child:last-child{
+				margin: 0 auto;
+				float: none;
+			}
+		}
+	}
+}
+
+.section--overlap{
+	z-index: 2;
+	position: relative;
+}</p></body></html>

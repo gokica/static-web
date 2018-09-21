@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>// MARKUP:
+//
+// </p><div class="alert">
+//   <div class="alert__body"></div>
+//   <div class="alert__close"></div>
+// </div>
+//
+// MODIFIERS:
+//
+// .bg--error, .bg--success, .bg--primary
+
+
+.alert{
+	overflow: hidden;
+	border: 1px solid darken(@color-bg-site, 10%);
+	padding: @base-line-height/2;
+	.alert__body, .alert__close{
+		display: inline-block;
+		user-select: none;
+	}
+	.alert__body{
+		float: left;
+	}
+	.alert__close{
+		float: right;
+		cursor: pointer;
+	}
+	&amp;.bg--error{
+		background: lighten(@color-error, 40%);
+		border-color: @color-error;
+		.alert__close{
+			color: @color-error;
+		}
+	}
+	&amp;.bg--success{
+		background: lighten(@color-success, 40%);
+		border-color: @color-success;
+		.alert__close{
+			color: @color-success;
+		}
+	}
+	&amp;.bg--primary{
+		background: lighten(@color-primary, 40%);
+		border-color: @color-primary;
+		.alert__body{
+			&gt; span{
+				color: @color-body;
+			}
+		}
+		.alert__close{
+			color: @color-primary;
+		}
+	}
+	&amp;.alert--dismissed{
+		display: none;
+	}
+}</body></html>

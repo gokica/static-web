@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*! -- Stack Boxes -- */
+
+.boxed{
+	border-radius: 6px;
+	.background-image-holder{
+		border-radius: 6px;
+	}
+	&amp;:before{
+		border-radius: 6px;
+	}
+	&amp;:not(:last-child){
+		margin-bottom: 30px;
+	}
+	&amp;:not([class*='bg-']){
+		background: @color-bg-site;
+	}
+	&amp;.bg--secondary{
+		.boxed{
+			background: @color-bg-secondary;
+		}
+	}
+}
+
+@media all and (min-width: 768px){
+	.switchable{
+		.imagebg{
+			.boxed{
+				padding-left: @base-line-height*3;
+			}
+		}
+	}
+}
+
+.bg--dark,.imagebg:not(.image--light){
+	.boxed:not([class*='bg-']){
+		background: none;
+		color: #fff;
+		&amp;.boxed--border{
+			border-color: lighten(@color-dark, 10%);
+		}
+	}	
+	.boxed{
+		&amp;[class*='bg-']{
+			&amp;.boxed--border{
+				border: none;
+			}
+		}
+	}
+}
+
+.imagebg{
+	&amp;:not(.image--light){
+		.boxed:not(.bg--white):not(.bg--none){
+			background: rgba(20,20,20,0.3);
+			&amp;.boxed--border{
+				border: none;
+			}
+			.boxed{
+				background: none;
+			}
+		}	
+	}
+}
+
+.bg--primary{
+	.boxed:not(.imagebg){
+		color: @color-body;
+		p{
+			color: @color-body;
+		}
+		h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,i{
+			color: @color-dark;
+		}
+		a{
+			color: @color-primary;
+		}
+		.color--primary{
+			color: @color-primary !important;
+		}
+	}
+}
+
+@media all and (min-width: 768px){
+	.boxed{
+		&amp;.boxed--emphasis{
+			.scale(1.075);
+		}
+	}
+}</p></body></html>

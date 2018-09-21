@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>section,footer{
+	padding-top: @standard-space-n;
+	padding-bottom: @standard-space-s;
+	&amp;.space--xxs{
+		padding-top: @standard-space-n/4;
+		padding-bottom: @standard-space-n/4;
+	}
+	&amp;.space--xs{
+		padding-top: @standard-space-n/2;
+		padding-bottom: @standard-space-n/2;
+	}
+	&amp;.space--sm{
+		padding-top: @standard-space-n/1.5;
+		padding-bottom: @standard-space-n/1.5;
+	}
+	&amp;.space--md{
+		padding-top: @standard-space-n *1.5;
+		padding-bottom: @standard-space-n *1.5;
+	}
+	&amp;.space--lg{
+		padding-top: @standard-space-n * 2;
+		padding-bottom: @standard-space-n * 2;
+	}
+	&amp;.space--xlg{
+		padding-top: @standard-space-n * 4;
+		padding-bottom: @standard-space-s * 4;
+	}
+	&amp;.space--0{
+		padding: 0;
+	}
+	&amp;.section--even{
+		padding-top: @standard-space-s;
+		padding-bottom: @standard-space-s;
+	}
+	&amp;.space-bottom--sm{
+		padding-bottom: @standard-space-n/1.5;
+	}
+}
+
+
+@media all and (max-width: 767px){
+	section,footer,section.section--even{
+		padding: @standard-space-mobile 0;
+		&amp;.space--lg,&amp;.space--md{
+			padding: @standard-space-mobile 0;
+		}
+		&amp;.space--xlg{
+			padding: @standard-space-mobile * 1.5 0;
+		}
+	}
+	
+}
+
+// Bootstrap nested columns
+
+div[class*='col-'] &gt; div[class*='col-']:first-child{
+	padding-left: 0;
+}
+
+div[class*='col-'] &gt; div[class*='col-']:last-child{
+	padding-right: 0;
+}
+
+// Bootstrap six col fix
+
+@media all and (max-width: 767px){
+	.col-xs-6:nth-child(odd){
+		padding-right: 7.5px;
+	}
+	.col-xs-6:nth-child(even){
+		padding-left: 7.5px;
+	}
+}
+
+// Spacing Classes
+
+@media all and (min-width: 768px){
+	.mt--1{
+		margin-top: @base-line-height;
+	}
+	.mt--2{
+		margin-top: @base-line-height*2;
+	}
+	.mt--3{
+		margin-top: @base-line-height*3;
+	}
+	.mb--1{
+		margin-bottom: @base-line-height;
+	}
+	.mb--2{
+		margin-bottom: @base-line-height*2;
+	}
+	.mb--3{
+		margin-bottom: @base-line-height*3;
+	}
+}
+
+@media all and (max-width: 990px){
+	.mt--1,.mt--2{
+		margin-top: @base-line-height;
+	}
+	.mt--3{
+		margin-top: @base-line-height*1.5;
+	}
+}
+
+.unpad{
+	padding: 0;
+}
+
+.unpad--bottom{
+	padding-bottom: 0;
+}
+
+.unpad--top{
+	padding-top: 0;
+}
+
+section{
+	&amp;.unpad--bottom{
+		padding-bottom: 0;
+	}
+	&amp;.unpad{
+		padding: 0;
+	}
+	&amp;.unpad--top{
+		padding-top: 0;
+	}
+}
+
+.unmarg--bottom{
+	margin-bottom: 0;
+}
+
+.unmarg{
+	margin: 0;
+}
+
+.unmarg--top{
+	margin-top: 0;
+}
+</p></body></html>

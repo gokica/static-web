@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>// MARKUP:
+// 
+// </p><ul class="ligtbox-gallery gallery--gaps masonry" data-grid="6">
+//   <li>
+//     <a href="big-image.jpgindex.html" data-lightbox="gallery name">
+//       <img>
+//     </a>
+//   </li>
+// </ul>
+//
+//
+// MODIFIERS:
+// .gallery--gaps - make whitespace around each item
+// .masonry - arrange the items in a masonry layout
+// [data-grid] - how many items per row
+
+.lb-outerContainer{
+	border-radius: 0;
+	.lb-container{
+		padding: 0;
+		img{
+			margin: 0;
+		}
+	}
+}
+
+.lightbox-gallery{
+	overflow: hidden;
+	li{
+		float: left;
+		img{
+			margin: 0;
+			width: 100%;
+		}
+	}
+	&amp;.gallery--gaps{
+		li{
+			padding: @default-gap-padding;
+		}
+	}
+}</body></html>

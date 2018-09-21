@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*! -- Stack Progress Horizontal -- */
+
+.progress-horizontal{
+	&amp;:not(:last-child){
+		margin-bottom: @base-line-height;
+	}
+	&amp;.progress-horizontal--lg{
+		.progress-horizontal__bar{
+			height: @base-line-height;
+		}
+	}
+	&amp;.progress-horizontal--sm{
+		.progress-horizontal__bar{
+			height: @base-line-height/4;
+		}
+	}
+}
+
+.progress-horizontal__bar{
+	height: @base-line-height/2;
+	border-radius: 100px;
+	background: @color-bg-secondary;
+	border: 1px solid rgba(0,0,0,0.1);
+	&amp;:not(:last-child){
+		margin-bottom: @base-line-height/4;
+	}
+}
+
+.progress-horizontal__progress{
+	background: @color-primary;
+	border-radius: 100px;		
+}</p></body></html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*! -- Stack Wizard -- */
+
+.wizard{
+	transition: opacity .3s ease;
+	opacity: 0;
+	&amp;.active{
+		opacity: 1;
+	}
+}
+
+.wizard &gt; .actions a, .wizard &gt; .actions a:hover, .wizard &gt; .actions a:active{
+	background: @color-primary;
+	transition: all .3s ease;
+	padding: @base-line-height/4 @base-line-height;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.wizard &gt; .steps .current a, .wizard &gt; .steps .current a:hover, .wizard &gt; .steps .current a:active{
+	background: none;
+	color: @color-dark;
+}
+
+.wizard &gt; .steps a{
+	position: relative;
+	&amp;:before{
+		content: '';
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		margin-left: -10px;
+		background: #eee;
+		display: block;
+		bottom: 0;
+		transition: all .2s ease;
+	}
+	&amp;:after{
+		content: '';
+		position: absolute;
+		width: 100%;
+		bottom: 7px;
+		height: 2px;
+		background: #eee;
+		left: 0;
+		transition: all .2s ease;
+	}
+}
+
+.wizard &gt; .steps li{
+	&amp;:first-child{
+		a{
+			&amp;:after{
+				width: 50%;
+				left: 50%;
+			}
+		}
+	}
+	&amp;:last-child{
+		a{
+			&amp;:after{
+				width: 50%;
+			}
+		}
+	}
+	&amp;.current{
+		a{
+			&amp;:after, &amp;:before{
+				background-color: @color-primary;
+			}
+		}
+	}
+}
+
+.wizard &gt; .steps a, .wizard &gt; .steps a:hover{
+	padding-bottom: @base-line-height*1.5;
+}
+
+.wizard &gt; .steps .done a, .wizard &gt; .steps .done a:hover, .wizard &gt; .steps .done a:active, .wizard &gt; .steps .disabled a, .wizard &gt; .steps .disabled a:hover, .wizard &gt; .steps .disabled a:active{
+	background: none;
+	color: @color-dark;
+}
+
+.wizard &gt; .steps a, .wizard &gt; .steps a:hover, .wizard &gt; .steps a:active{
+	margin: 0;
+}
+
+.wizard &gt; .actions a, .wizard &gt; .actions a:hover, .wizard &gt; .actions a:active{
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.wizard &gt; .steps &gt; ul, .wizard &gt; .actions{
+	text-align: center;
+}
+
+.wizard &gt; .steps &gt; ul &gt; li, .wizard &gt; .actions &gt; ul &gt; li{
+	float: none;
+	display: inline-block;
+}
+
+.wizard &gt; section{
+	padding: 0;
+}
+
+.wizard &gt; .content{
+	background: @color-bg-secondary;
+	margin-top: @base-line-height;
+	margin-bottom: @base-line-height;
+	border: 1px solid #ececec;
+}
+
+.wizard &gt; .content &gt; .body{
+	padding: @base-line-height;
+	width: 100%;
+	height: 100%;
+}
+
+.wizard &gt; .steps .number{
+	font-size: 1em;
+}
+
+@media all and (max-width: 767px){
+	.wizard &gt; .steps .number{
+		display: block;
+	}
+	.wizard &gt; .content{
+		min-height: 25em;
+	}
+	.wizard{
+		.pos-vertical-center{
+			top: 50%;
+			transform: translateY(-50%);
+			-wekbit-transform: translateY(-50%);
+		}
+	}
+}
+
+.wizard{
+	&amp;.bg--white{
+		background: none !important;
+		&gt; .content{
+			background: #fff;
+		}
+	}
+	&gt; .content{
+		img{
+			max-height: 240px;
+		}
+	}
+}
+
+@media all and (max-width: 767px){
+	.wizard{
+		&gt; .content{
+			img{
+				max-height: 120px;
+				margin-bottom: @base-line-height/2;
+			}
+		}
+	}
+}</p></body></html>

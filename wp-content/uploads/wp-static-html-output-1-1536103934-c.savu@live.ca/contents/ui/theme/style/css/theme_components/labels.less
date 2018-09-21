@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*! -- Stack Labels -- */
+
+.label{
+	&amp;:not([class*='bg--']){
+		background: @color-primary-1;
+	}
+	display: inline-block;
+	font-size: 9px;
+	font-weight: 700;
+	letter-spacing: .5px;
+	color: #fff;
+	text-transform: uppercase;
+	height: 26px;
+	min-width: 65px;
+	padding: 0 10px;
+	text-align: center;
+	border-radius: 50px;
+	position: absolute;
+	z-index: 3;
+	top: @base-line-height/1.5;
+	right: @base-line-height/1.5;
+	&amp;.label--inline{
+		position: relative;
+		top: 0;
+		right: 0;
+		&amp;:not(:last-child){
+			margin-right: @base-line-height/2;
+		}
+		+span, +p{
+			position: relative;
+			top: 1px;
+		}
+	}
+	&amp;.switchable-toggle{
+		left: 50%;
+		right: auto;
+		.translate3d(-50%,0,0);
+		.box-shadow-shallow;
+	}
+}
+
+.bg--primary-1{
+	.label{
+		&amp;:not([class*='bg--']){
+			background: @color-primary-2;
+		}
+	}
+}</p></body></html>
