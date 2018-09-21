@@ -10,7 +10,7 @@
 <channel>
 	<title>c.savu@live.ca &#8211; goki.ca</title>
 	<atom:link href="http://localhost/author/c-savulive-ca/feed/" rel="self" type="application/rss+xml" />
-	<link>/gokica.github.io/static-web/</link>
+	<link>https://gokica.github.io/static-web/</link>
 	<description>Full-Stack Marketing for the Modern Business</description>
 	<lastBuildDate>Fri, 21 Sep 2018 21:19:50 +0000</lastBuildDate>
 	<language>en-CA</language>
@@ -19,17 +19,17 @@
 	<generator>https://wordpress.org/?v=4.9.8</generator>
 	<item>
 		<title>Hello world!</title>
-		<link>/gokica.github.io/static-web/2018/09/21/hello-world/</link>
-		<comments>/gokica.github.io/static-web/2018/09/21/hello-world/#comments</comments>
+		<link>https://gokica.github.io/static-web/2018/09/21/hello-world/</link>
+		<comments>https://gokica.github.io/static-web/2018/09/21/hello-world/#comments</comments>
 		<pubDate>Fri, 21 Sep 2018 21:06:30 +0000</pubDate>
 		<dc:creator><![CDATA[c.savu@live.ca]]></dc:creator>
 				<category><![CDATA[Uncategorised]]></category>
 
-		<guid isPermaLink="false">/gokica.github.io/static-web/?p=1</guid>
+		<guid isPermaLink="false">https://gokica.github.io/static-web/?p=1</guid>
 		<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
 				<content:encoded><![CDATA[<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 ]]></content:encoded>
-			<wfw:commentRss>/gokica.github.io/static-web/2018/09/21/hello-world/feed/</wfw:commentRss>
+			<wfw:commentRss>https://gokica.github.io/static-web/2018/09/21/hello-world/feed/</wfw:commentRss>
 		<slash:comments>1</slash:comments>
 		</item>
 	</channel>
