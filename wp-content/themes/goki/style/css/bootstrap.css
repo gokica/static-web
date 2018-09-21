@@ -255,8 +255,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('https://gokica.github.io/static-web/wp-content/themes/goki/style/fonts/glyphicons-halflings-regular.eot');
-  src: url('https://gokica.github.io/static-web/wp-content/themes/goki/style/fonts/glyphicons-halflings-regular.eot#iefix') format('embedded-opentype'), url('https://gokica.github.io/static-web/wp-content/themes/goki/style/fonts/glyphicons-halflings-regular.woff') format('woff'), url('https://gokica.github.io/static-web/wp-content/themes/goki/style/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('https://gokica.github.io/static-web/wp-content/themes/goki/style/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('/gokica.github.io/static-web/wp-content/themes/goki/style/fonts/glyphicons-halflings-regular.eot');
+  src: url('/gokica.github.io/static-web/wp-content/themes/goki/style/fonts/glyphicons-halflings-regular.eot#iefix') format('embedded-opentype'), url('/gokica.github.io/static-web/wp-content/themes/goki/style/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/gokica.github.io/static-web/wp-content/themes/goki/style/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/gokica.github.io/static-web/wp-content/themes/goki/style/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;

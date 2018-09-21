@@ -1,8 +1,8 @@
 @font-face {
 	font-family: 'iconsmind';
-	src:url('https://gokica.github.io/static-web/wp-content/themes/goki/style/fonts/iconsmind.eot#iefix-rdmvgc') format('embedded-opentype');
-	src:url('https://gokica.github.io/static-web/wp-content/themes/goki/style/fonts/iconsmind.woff') format('woff'),
-		url('https://gokica.github.io/static-web/wp-content/themes/goki/style/fonts/iconsmind.ttf') format('truetype');
+	src:url('/gokica.github.io/static-web/wp-content/themes/goki/style/fonts/iconsmind.eot#iefix-rdmvgc') format('embedded-opentype');
+	src:url('/gokica.github.io/static-web/wp-content/themes/goki/style/fonts/iconsmind.woff') format('woff'),
+		url('/gokica.github.io/static-web/wp-content/themes/goki/style/fonts/iconsmind.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
