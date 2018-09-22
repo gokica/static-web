@@ -12,7 +12,11 @@
 <link rel='stylesheet' href='https://gokica.github.io/static-web/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load%5B%5D=dashicons,buttons,forms,l10n,login&amp;ver=4.9.8' type='text/css' media='all' />
 <meta name='robots' content='noindex,follow' />
 	<meta name="viewport" content="width=device-width" />
-		</head>
+	<link rel="icon" href="https://gokica.github.io/static-web/wp-content/uploads/2018/09/goki-favicon-60x60.png" sizes="32x32" />
+<link rel="icon" href="https://gokica.github.io/static-web/wp-content/uploads/2018/09/goki-favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://gokica.github.io/static-web/wp-content/uploads/2018/09/goki-favicon.png" />
+<meta name="msapplication-TileImage" content="https://gokica.github.io/static-web/wp-content/uploads/2018/09/goki-favicon.png" />
+	</head>
 	<body class="login login-action-login wp-core-ui  locale-en-ca">
 		<div id="login">
 		<h1><a href="https://en-ca.wordpress.org/" title="Powered by WordPress" tabindex="-1">Powered by WordPress</a></h1>
